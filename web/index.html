@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/lib/jquery-2.2.3.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <button id="hello_text">Сказать привет</button>
+    <div id="say_hello"></div>
+
+    <form>
+        <p>Введите числа и выберите операцию:</p>
+        <input id="var1" type="text"/>
+        <select id="operation">
+            <option value="0">+</option>
+            <option value="1">-</option>
+            <option value="2">*</option>
+            <option value="3">:</option>
+        </select>
+        <input id="var2" type="text"/>
+
+    </form>
+
+    <button id="calc">Посчитать</button>
+
+    <p>Результат операции: <b><span style="color:red" id="result"></span></b></p>
+    <!--3 задание ниже-->
+
+    <p>Рандомное число: <span style="color:red" id="answer_random"></span></p>
+
+    <form>
+        <p>Введите числа m и n:</p>
+        <input id="m" type="text"/>
+        <input id="n" type="text"/>
+    </form>
+    <button id="closer-submit">Посчитать</button>
+
+    <p>Ближе к 10: <b><span style="color:red" id="closer-result"></span></b></p>
+
+
+    <form>
+        <p>Введите числа a, b, c:</p>
+        <label><input id="a" type="text"/>a</label>
+        <label><input id="b" type="text"/>b</label>
+        <label><input id="c" type="text"/>c</label>
+    </form>
+    <button id="roots-submit">Посчитать</button>
+
+    <p>Результат: <b><span style="color:red" id="roots-result"></span></b></p>
+    <p>Рандомная таблица 1:</p>
+    <table id="random-table" class="table"></table>
+    <p>Рандомная таблица 2:</p>
+    <table id="random-table-max" class="table"></table>
+    <p>Максимумы в строках рандомной таблицы 2:</p>
+    <ul id="maximums" class="list-group"></ul>
+</div>
+</body>
+</html>
